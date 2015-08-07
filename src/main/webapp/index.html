@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" style="height: 100%">
+<head>
+<meta charset="utf-8">
+<title>AngularJS demo</title>
+
+<script src="js/lodash.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-resource.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/ngDialog.js"></script>
+<script src="js/restangular.min.js"></script>
+
+<script src="js/testCtlr.js"></script>
+</head>
+<body ng-app="stepPortalJsApp" ng-controller="testCtlr" resize ng-cloak >
+
+	<div>
+		<input type="button" value="Submit" ng-click="submit()">
+		<p>{{application.prospect.entityId}}</p>
+	</div>
+
+</body>
+</html>
