@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/test")
 public class TestService
 {
-	@RequestMapping(value = "/return", method = RequestMethod.POST)
+	@RequestMapping(value = "/submit", method = RequestMethod.POST)
 	@ResponseBody
-	public Person initiateChat(@RequestBody Person person)
+	public Person submit(@RequestBody Person person)
 	{
 		person.setId("1");
 		return person;

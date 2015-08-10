@@ -4,26 +4,25 @@
 <meta charset="utf-8">
 <title>AngularJS demo</title>
 
-<script src="js/lodash.js"></script>
-<script src="js/angular.js"></script>
-<script src="js/angular-resource.js"></script>
-<script src="js/angular-ui-router.js"></script>
-<script src="js/ngDialog.js"></script>
-<script src="js/restangular.min.js"></script>
+<script type="text/javascript" src="js/core/angular.js"></script>
+<script src="js/core/lodash.js"></script>
+<script src="js/core/angular-resource.js"></script>
+<script src="js/core/angular-ui-router.js"></script>
+<script src="js/core/ngDialog.js"></script>
+<script src="js/core/restangular.min.js"></script>
 
-<script src="js/testCtlr.js"></script>
+<script type="text/javascript" src="js/ctlr/indexCtrl.js"></script>
 </head>
-<body ng-app="testApp" ng-controller="testCtlr" >
-
-	<div>
-		<p>{{application.person.firstName}} {{application.person.lastName}}</p>
-		First Name :- <input type="text" ng-model="application.person.firstName">
-		Last Name :- <input type="text" ng-model="application.person.lastName">
-		<br>
-		<input type="button" value="Submit" ng-click="submit()">
-		<br>
-		<p>{{application.person.id}}</p>
-	</div>
-
+<body ng-app="testApp" ng-controller="testCtlr">
+	
+	FirstName :- <input type="text" ng-model="application.person.firstName">
+	<p>{{application.person.firstName}}</p>
+	
+	LastName :- <input type="text" ng-model="application.person.lastName">
+	
+	<input type="button" value="Submit" ng-click="submit()">
+	
+	<p>{{application.person.id}}</p>
+	
 </body>
 </html>
