@@ -12,10 +12,10 @@ public class TestService
 {
 	@RequestMapping(value = "/return", method = RequestMethod.POST)
 	@ResponseBody
-	public Prospect initiateChat(@RequestBody Prospect prospect)
+	public Person initiateChat(@RequestBody Person person)
 	{
-		prospect.setEntityId("TEST");
-		return prospect;
+		person.setId("1");
+		return person;
 	}
 
 }

@@ -1,19 +1,13 @@
 package com.angularjs.demo;
 
+/**
+ * 
+ * @author SwapnilB
+ * 
+ */
 public class Application
 {
-	private Prospect prospect;
 	private Person person;
-
-	public Prospect getProspect()
-	{
-		return prospect;
-	}
-
-	public void setProspect(Prospect prospect)
-	{
-		this.prospect = prospect;
-	}
 
 	public Person getPerson()
 	{

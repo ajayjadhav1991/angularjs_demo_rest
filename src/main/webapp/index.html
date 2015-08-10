@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" style="height: 100%">
+<html>
 <head>
 <meta charset="utf-8">
 <title>AngularJS demo</title>
@@ -13,11 +13,16 @@
 
 <script src="js/testCtlr.js"></script>
 </head>
-<body ng-app="stepPortalJsApp" ng-controller="testCtlr" resize ng-cloak >
+<body ng-app="testApp" ng-controller="testCtlr" >
 
 	<div>
+		<p>{{application.person.firstName}} {{application.person.lastName}}</p>
+		First Name :- <input type="text" ng-model="application.person.firstName">
+		Last Name :- <input type="text" ng-model="application.person.lastName">
+		<br>
 		<input type="button" value="Submit" ng-click="submit()">
-		<p>{{application.prospect.entityId}}</p>
+		<br>
+		<p>{{application.person.id}}</p>
 	</div>
 
 </body>

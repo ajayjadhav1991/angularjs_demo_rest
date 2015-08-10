@@ -1,6 +1,6 @@
 'use strict';
 var app = angular.module(
-		'stepPortalJsApp',
+		'testApp',
 		[
 				'ui.router', 'ngResource', 'ngDialog', 'restangular'
 		] ).config( function ( RestangularProvider ) {
@@ -12,11 +12,11 @@ var app = angular.module(
 app.controller( 'testCtlr', function ( $rootScope, $scope, Restangular ) {
 
 	$scope.application = {};
-	$scope.application.prospect = {};
+	$scope.application.person = {};
 	
 	$scope.submit = function () {
-		Restangular.one( "test" ).post( "return", $scope.application.prospect ).then( function ( data ) {
-			$scope.application.prospect.entityId = data.entityId;
+		Restangular.one( "test" ).post( "return", $scope.application.person ).then( function ( data ) {
+			$scope.application.person.id = data.id;
 		} );
 	}
 
